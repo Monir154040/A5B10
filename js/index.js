@@ -9,6 +9,7 @@ document.getElementById('donate-for-noakhali').addEventListener('click', functio
         if (donateForNK < availableBalance) {
             const fundOfNoakhali = document.getElementById('donation-fund-of-noakhali').innerText;
             const newBalanceofNK = parseFloat(fundOfNoakhali) + parseFloat(donateForNK)
+            
             const modal = document.getElementById('myModal');
             modal.classList.remove('hidden')
 
@@ -114,7 +115,7 @@ historyTab.addEventListener('click', function () {
 
     const historyContainer = document.getElementById("history-list")
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-})
+});
 
 donationTab.addEventListener('click',function(){
     donationTab.classList.add(
