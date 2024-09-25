@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+    <!-- modal start -->
+    <div id="myModal" class=" fixed items-center ml-20 pt-20 place-items-center inset-0 z-[999] justify-center  hidden">
+        <div class="bg-white p-4 ml-30  rounded-lg relative w-1/3 flex flex-col items-center">
+            <h1 class="text-4xl font-bold mb-4 text-black">Congratulation</h1>
+            <img src="./assets/coin.png" alt="">
+            <p class="p-5 text-black">Your Donation Received Successfully .</p>
+            <h1>ThankYou for your great work</h1>
+            <div class="mt-6 flex justify-end">
+                <button id="close-modal-btn"
+                    class="bg-orange-300 transition: background-color 0.3s ease-in-out; text-black px-4 py-2 rounded hover:bg-lime-400">close</button>
+            </div>
+        </div>
+    </div>
+    <!-- modal end  -->
+    <main class="justify-center ">
+        <div class="navbar sticky top-0 z-10 backdrop-filter backdrop-blur-lg
+          bg-opacity-50 bg-slate-200 py-7 flex justify-around mx-auto">
+            <button class="btn btn-ghost text-xl bg-[#B4F461] ">
+                <a href="blog.html">Blog</a></button>
+            <div class="gap-3">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+            </div>
+            <button class="btn btn-ghost text-xl ">
+                <img src="./assets/coin.png" alt="">
+                <h2 id="available-balance" class="text-xl font-bold">5000 Taka</h2>
+            </button>
+        </div>
+
+        <div class=" text-center my-10 ">
+            <button id="donation-id" class="btn bg-[#B4F461] text-xl px-10">Donation </button>
+            <button id="history-id" class="btn px-10">History</button>
+        </div>
+
+
+        <!-- card section Start -->
+        <section id="section-card">
+            <!-- for Noakhali -->
+            <div class="card lg:card-side bg-base-100 shadow-xl gap-5 mx-auto p-10 ">
+                <img src="./assets/noakhali.png" alt="">
+
+                <div class="card-body ">
+                    <div>
+                        <button class="btn px-5 gap-2">
+                            <img src="./assets/coin.png" alt="">
+                            <div id="donation-fund-of-noakhali">0</div>
+                        </button>
+                    </div>
+                    <h2 class="card-title text-3xl ">Donate For Flood at Noakhali Bangladesh</h2>
+                    <p>Being trapped and surrounded by deep floodwater means people are unable to access basic
+                        essentials,
+                        and the little supplies they do have are quickly running out. The strong winds and heavy rain
+                        continue to put lives and property at risk. Entire livelihoods, cattle and farmland are
+                        destroyed,
+                        leaving people with absolutely nothing. Please help us help them, today.</p>
+
+                    <input id="donate-amount-inputField" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full " />
+
+                    <button id="donate-for-noakhali" class="btn btn-wide w-full bg-[#B4F461] ">Donate Now</button>
+
+
+
+                </div>
+
+            </div>
+            </div>
+            <!-- Noakhali card section end -->
+            <!-- For Feni  -->
+            <div class="card lg:card-side bg-base-100 shadow-xl mx-auto p-10 ">
+                <img src="./assets/feni.png" alt="">
+
+                <div class="card-body ">
+                    <div>
+                        <button class="btn px-5 gap-2">
+                            <img src="./assets/coin.png" alt="">
+                            <div id="donation-fund-of-feni">0</div>
+                        </button>
+                    </div>
+                    <h2 class="card-title text-3xl ">Donate For Flood victims in Feni Bangladesh</h2>
+                    <p>Communities across South Asia are reeling from the impacts of back-to-back floods and storms.
+                        From
+                        Kerala in the southern tip of India, to Sylhet and Feni in Bangladesh, to Punjab province of
+                        Pakistan, flooding and landslides have caused widespread destruction across the region,
+                        displacing
+                        or stranding millions and resulting in hundreds of lives lost. Your donation to the South Asia
+                        Flood
+                        Relief Fund will provide emergency relief and long-term support to the most-affected
+                        communities.
+                    </p>
+
+                    <input id="donate-amount-for-feni" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full " />
+
+                    <button id="donate-for-feni" class="btn btn-wide w-full bg-[#B4F461] ">Donate Now</button>
+
+
+                </div>
+            </div>
+            <!-- Feni section end  -->
+            <!-- card for students  -->
+            <div class="card lg:card-side bg-base-100 shadow-xl mx-auto p-10 ">
+                <img src="./assets/quota-protest.png" alt="">
+
+                <div class="card-body ">
+                    <div>
+                        <button class="btn px-5 gap-2">
+                            <img src="./assets/coin.png" alt="">
+                            <h2 id="donation-fundOf-student"> 0 BDT</h2>
+                        </button>
+                    </div>
+                    <h2 class="card-title text-3xl ">Donate For quota-protest students in Bangladesh</h2>
+                    <p>Initially focused on restructuring quota-based systems for government job recruitment, the
+                        movement
+                        expanded against what many perceive as an authoritarian government when they carried out the
+                        July
+                        massacre of protestors and civilians, most of whom were students. 2024 Bangladesh quota reform
+                        movement.</p>
+
+                    <input id="donate-amount-inputOf-student" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full " />
+
+                    <button id="donate-btn-for-student" class="btn btn-wide w-full bg-[#B4F461] ">Donate Now</button>
+
+                </div>
+
+            </div>
+            </div>
+            <!-- student card section end -->
+
+            <!-- card section End -->
+        </section>
+        <div id="history-list" class="grid grid-cols-2 gap-3">
+
+        </div>
+
+    </main>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
